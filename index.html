@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu Ristorante</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="menu-container">
+
+    <!-- TABS -->
+    <div class="tabs">
+        <div class="tab active" onclick="openTab('pizze')">Pizze</div>
+        <div class="tab" onclick="openTab('dolci')">Dolci</div>
+        <div class="tab" onclick="openTab('bevande')">Bevande</div>
+    </div>
+
+    <!-- PIZZE -->
+    <div id="pizze" class="tab-content active">
+        <div class="tm-list-item">
+            <img src="https://source.unsplash.com/100x100/?pizza" class="tm-list-item-img">
+            <div class="tm-list-item-text">
+                <h3 class="tm-list-item-name">
+                    Margherita
+                    <span class="tm-list-item-price">€6.00</span>
+                </h3>
+                <p class="tm-list-item-description">
+                    Pomodoro, mozzarella e basilico fresco.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- DOLCI -->
+    <div id="dolci" class="tab-content">
+        <div class="tm-list-item">
+            <img src="https://source.unsplash.com/100x100/?cake" class="tm-list-item-img">
+            <div class="tm-list-item-text">
+                <h3 class="tm-list-item-name">
+                    Tiramisù
+                    <span class="tm-list-item-price">€4.50</span>
+                </h3>
+                <p class="tm-list-item-description">
+                    Classico dolce italiano con mascarpone e caffè.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- BEVANDE -->
+    <div id="bevande" class="tab-content">
+        <div class="tm-list-item">
+            <img src="https://source.unsplash.com/100x100/?coffee" class="tm-list-item-img">
+            <div class="tm-list-item-text">
+                <h3 class="tm-list-item-name">
+                    Caffè Espresso
+                    <span class="tm-list-item-price">€2.50</span>
+                </h3>
+                <p class="tm-list-item-description">
+                    Miscela arabica di qualità superiore.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
